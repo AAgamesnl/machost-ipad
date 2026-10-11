@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Allow access to maximum device memory on iPadOS -->
+    <key>com.apple.developer.kernel.increased-memory-limit</key>
+    <true/>
+
+    <!-- Allow debugger attachment and task inspection for JIT enablement -->
+    <key>get-task-allow</key>
+    <true/>
+
+    <!-- Dynamic codesigning capability for runtime JIT code execution -->
+    <key>dynamic-codesigning</key>
+    <true/>
+
+    <!-- Private CS debugger entitlement for debugging guest binaries -->
+    <key>com.apple.private.cs.debugger</key>
+    <true/>
+
+    <!-- Application identifier prefix binding -->
+    <key>application-identifier</key>
+    <string>$(AppIdentifierPrefix)com.antigravity.machost</string>
+
+    <!-- Keychain access groups -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)com.antigravity.machost</string>
+    </array>
+</dict>
+</plist>
