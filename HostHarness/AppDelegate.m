@@ -1,5 +1,6 @@
 // AppDelegate.m - Host Application App Delegate.
 
+#include <TargetConditionals.h>
 #import "AppDelegate.h"
 #import "ContainerViewController.h"
 

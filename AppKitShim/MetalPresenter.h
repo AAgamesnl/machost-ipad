@@ -9,6 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <Metal/Metal.h>
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE || TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 #define MP_VIEW_BASE UIView

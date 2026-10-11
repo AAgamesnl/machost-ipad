@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE || TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 #import <mach-o/dyld.h>
@@ -201,9 +202,12 @@ static void *guest_thread_entry(void *arg) {
 }
 
 - (void)presentDocumentPicker {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     UIDocumentPickerViewController *picker = [[UIDocumentPickerViewController alloc]
         initWithDocumentTypes:@[@"public.item", @"public.data", @"public.executable"]
                        inMode:UIDocumentPickerModeImport];
+#pragma clang diagnostic pop
     picker.delegate = self;
     [self presentViewController:picker animated:YES completion:nil];
 }

@@ -2,6 +2,7 @@
 
 #import "AppKitShim.h"
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE || TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 #endif

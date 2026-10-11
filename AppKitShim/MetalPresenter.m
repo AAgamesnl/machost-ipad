@@ -4,6 +4,7 @@
 #import "MetalPresenter.h"
 #import "AppKitShim.h"
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE || TARGET_OS_IOS
 
 static NSString *const kBlitShaderSource = @""

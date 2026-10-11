@@ -3,6 +3,7 @@
 #ifndef CONTAINERVIEWCONTROLLER_H
 #define CONTAINERVIEWCONTROLLER_H
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE || TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 #define CVC_BASE_CLASS UIViewController

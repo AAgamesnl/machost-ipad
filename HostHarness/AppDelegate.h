@@ -3,6 +3,7 @@
 #ifndef APPDELEGATE_H
 #define APPDELEGATE_H
 
+#include <TargetConditionals.h>
 #if TARGET_OS_IPHONE || TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 
